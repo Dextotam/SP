@@ -6,27 +6,22 @@ INPUT(AA);
 INPUT(BB);
 INPUT(CC);
 
-MX -> IF (AA LT BB) && (AA LT CC) {
-        OUTPUT(AA) }
-       ELSE IF (BB LT AA) && (BB LT CC) 
-        OUTPUT(BB)
-       ELSE {CC}
+  IF AA GT BB && AA GT CC {
+    AA -> MX;
+  } ELSE IF BB GT AA && BB GT CC {
+    BB -> MX;
+  } ELSE {
+    CC -> MX;
+  }
+  PUTPUT ( MX );
 
-OUTPUT(MX);
-
-IF (AA==BB) && (AA==CC) && (BB==CC)
-    OUTPUT(1)   
-    ELSE 
-    OUTPUT({});
-
-OUTPUT(
-    IF (AA = BB) && (AA = CC) && (BB = CC) 
-	OUTPUT(1)
-    ELSE
-    OUTPUT(0)
-);
-
-IF ( AA GT 0 ) || ( BB GT 0 ) || ( CC GT 0 ) {
+  IF (AA == BB ) && ( AA == CC ) && ( BB == CC ) {
+    OUTPUT ( 1 )
+  } ELSE {
+    OUTPUT ( 0 )
+  }
+    
+  IF ( AA LT 0 ) || ( BB LT 0 ) || ( CC LT 0 ) {
     OUTPUT ( -1 )
   } ELSE {
     OUTPUT ( 0 )
@@ -37,5 +32,5 @@ IF ( AA GT 0 ) || ( BB GT 0 ) || ( CC GT 0 ) {
   } ELSE {
     OUTPUT ( 0 )
   }
-
-END    
+ 
+END
