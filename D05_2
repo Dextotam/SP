@@ -11,7 +11,7 @@ IF (AA==BB) && (AA==CC) && (BB==CC)
     ELSE 
     OUTPUT({});
 
-MX => IF (AA LT BB) && (AA LT CC) {
+MX -> IF (AA LT BB) && (AA LT CC) {
         OUTPUT(AA) }
        ELSE IF (BB LT AA) && (BB LT CC) 
         OUTPUT(BB)

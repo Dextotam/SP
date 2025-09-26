@@ -5,14 +5,14 @@ BEGIN VAR INT_2 AA, BB, II, JJ, XX;
 INPUT(AA);
 INPUT(BB);
 
-AA => II;
+AA -> II;
 REPEAT
     OUTPUT(II * II);
      II + 1 =>II;
 UNTIL II > BB;
 
-0 => XX;
-1 => II;
+0 -> XX;
+1 -> II;
 
 REPEAT
     1 => JJ;
