@@ -15,7 +15,7 @@ INPUT(CC);
   }
   PUTPUT ( MX );
 
-  IF (AA == BB ) && ( AA == CC ) && ( BB == CC ) {
+  IF (AA = BB ) && ( AA = CC ) && ( BB = CC ) {
     OUTPUT ( 1 )
   } ELSE {
     OUTPUT ( 0 )

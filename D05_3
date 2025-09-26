@@ -13,8 +13,8 @@ INPUT(BB);
     UNTIL II LT BB + 1
   }
 
-0 -> II;
-0 -> JJ;
+0 -> XX;
+1 -> II;
 
   IF II < AA + 1 {
     REPEAT
