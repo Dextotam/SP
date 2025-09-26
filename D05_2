@@ -32,7 +32,7 @@ IF ( AA LT 0 ) || ( BB LT 0 ) || ( CC LT 0 ) {
     OUTPUT ( 0 )
   }
 
-  IF NOT ( AA LT ( BB + CC ) ) {
+  IF !! ( AA LT ( BB + CC ) ) {
     OUTPUT ( 10 )
   } ELSE {
     OUTPUT ( 0 )
