@@ -5,24 +5,29 @@ BEGIN VAR INT_2 AA, BB, II, JJ, XX;
 INPUT(AA);
 INPUT(BB);
 
-AA -> II;
-REPEAT
-    OUTPUT(II * II);
-     II + 1 =>II;
-UNTIL II > BB;
-
-0 -> XX;
-1 -> II;
-
-REPEAT
-    1 => JJ;
+ AA -> II;
+  IF II LT BB + 1 {
     REPEAT
-         XX + 1 => XX;
-         JJ + 1 => JJ;
-    UNTIL JJ > BB;
-   II + 1 => II;
-UNTIL II > AA;
+      OUTPUT ( II * II );
+      II + 1 -> II;
+    UNTIL II LT BB + 1
+  }
 
-OUTPUT(XX);
+0 -> II;
+0 -> JJ;
+
+  IF II < AA + 1 {
+    REPEAT
+      1 -> JJ;
+      IF JJ < BB + 1 {
+	    REPEAT
+          XX + 1 -> XX;
+	     JJ + 1 -> JJ;
+        UNTIL JJ < BB + 1
+	  }
+	II + 1 -> II;
+    UNTIL II < AA + 1
+  }
+  OUTPUT ( XX )
 
 END
