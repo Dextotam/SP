@@ -1,4 +1,4 @@
-PROGRAM PG
+PROGRAM PG;
 
 BEGIN VAR INT_2 AA, BB, CC, MX;
 
@@ -26,7 +26,7 @@ OUTPUT(
     OUTPUT(0)
 );
 
-IF ( AA LT 0 ) || ( BB LT 0 ) || ( CC LT 0 ) {
+IF ( AA GT 0 ) || ( BB GT 0 ) || ( CC GT 0 ) {
     OUTPUT ( -1 )
   } ELSE {
     OUTPUT ( 0 )
