@@ -1,0 +1,28 @@
+PROGRAM PG
+
+BEGIN VAR INT_2 AA, BB, II, JJ, XX;
+
+INPUT(AA);
+INPUT(BB);
+
+AA => II;
+REPEAT
+    OUTPUT(II * II);
+     II + 1 =>II;
+UNTIL II > BB;
+
+0 => XX;
+1 => II;
+
+REPEAT
+    1 => JJ;
+    REPEAT
+         XX + 1 => XX;
+         JJ + 1 => JJ;
+    UNTIL JJ > BB;
+   II + 1 => II;
+UNTIL II > AA;
+
+OUTPUT(XX);
+
+END

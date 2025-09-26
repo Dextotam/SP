@@ -31,10 +31,11 @@ INPUT(AA);
 INPUT(BB);
 INPUT(CC);
 
-IF AA==BB && AA==CC && BB==CC {1} ELSE {0};
+IF (AA==BB) && (AA==CC) && (BB==CC)
+{1} ELSE {0};
 OUTPUT({});
 
-MX := IF (AA LT BB) && (AA LT CC) {AA}
+MX => IF (AA LT BB) && (AA LT CC) {AA}
          
        ELSE IF (BB LT AA) && (BB LT CC) {BB}
     
@@ -81,8 +82,8 @@ REPEAT
 UNTIL II > BB;
 
 0 => XX;
-
 1 => II;
+
 REPEAT
     1 => JJ;
     REPEAT
