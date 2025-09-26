@@ -6,11 +6,6 @@ INPUT(AA);
 INPUT(BB);
 INPUT(CC);
 
-IF (AA==BB) && (AA==CC) && (BB==CC)
-    OUTPUT(1)   
-    ELSE 
-    OUTPUT({});
-
 MX -> IF (AA LT BB) && (AA LT CC) {
         OUTPUT(AA) }
        ELSE IF (BB LT AA) && (BB LT CC) 
@@ -18,6 +13,11 @@ MX -> IF (AA LT BB) && (AA LT CC) {
        ELSE {CC}
 
 OUTPUT(MX);
+
+IF (AA==BB) && (AA==CC) && (BB==CC)
+    OUTPUT(1)   
+    ELSE 
+    OUTPUT({});
 
 OUTPUT(
     IF (AA = BB) && (AA = CC) && (BB = CC) 
