@@ -13,6 +13,7 @@ INPUT(CC);
   } ELSE {
     CC -> MX;
   }
+  
   PUTPUT ( MX );
 
   IF (AA = BB ) && ( AA = CC ) && ( BB = CC ) {
