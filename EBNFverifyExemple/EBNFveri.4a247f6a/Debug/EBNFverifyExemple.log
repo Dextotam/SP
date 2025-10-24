@@ -1,0 +1,11 @@
+﻿  one_file__x86_Debug.cpp
+C:\Users\Nazar\source\repos\cw_spirit\cw_spirit\boost\spirit\include\phoenix.hpp(12): message : This header is deprecated. Use <boost/phoenix.hpp> instead.
+C:\Users\dexto\OneDrive\Desktop\EBNFverifyExemple\one_file__x86_Debug.cpp(57,44): error C3861: 'tokenRLBIND': identifier not found
+      C:\Users\dexto\OneDrive\Desktop\EBNFverifyExemple\one_file__x86_Debug.cpp(57,44):
+      the template instantiation context (the oldest one first) is
+          C:\Users\dexto\OneDrive\Desktop\EBNFverifyExemple\one_file__x86_Debug.cpp(40,8):
+          while compiling class template 'cwgrammar'
+  
+C:\Users\dexto\OneDrive\Desktop\EBNFverifyExemple\one_file__x86_Debug.cpp(123,9): error C3861: 'tokenRLBIND': identifier not found
+C:\Users\dexto\OneDrive\Desktop\EBNFverifyExemple\one_file__x86_Debug.cpp(57,44): error C2065: 'tokenRLBIND': undeclared identifier
+C:\Users\dexto\OneDrive\Desktop\EBNFverifyExemple\one_file__x86_Debug.cpp(123,9): error C2065: 'tokenRLBIND': undeclared identifier
